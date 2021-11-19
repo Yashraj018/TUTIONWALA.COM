@@ -1,0 +1,275 @@
+	body { padding-top: 90px; 
+	}
+
+	#grad {
+		background: -webkit-linear-gradient(left,rgba(200, 225, 250, 1), rgba(232, 243, 254, 1),rgba(255, 255, 255, 1), rgba(232, 243, 254, 1),rgba(200, 225, 250, 1)); /*Safari 5.1-6*/
+	  	background: -moz-linear-gradient(right,rgba(200, 225, 250, 1), rgba(232, 243, 254, 1),rgba(255, 255, 255, 1), rgba(232, 243, 254, 1),rgba(200, 225, 250, 1)); /*Fx 3.6-15*/
+  		background: linear-gradient(to right,rgba(200, 225, 250, 1), rgba(232, 243, 254, 1),rgba(255, 255, 255, 1), rgba(232, 243, 254, 1),rgba(200, 225, 250, 1)); /*Standard*/
+	}
+	.navbar-default .navbar-nav .btn-default {
+		border-radius:6px;
+		background:none;
+	}	
+	.navbar-default .navbar-nav .btn-default:hover,
+	.navbar-default .navbar-nav .btn-default:focus {
+		border:#0099FF solid thin;
+		border-radius:6px;
+		background: rgba(255, 255, 255, 0.5);
+		transition-duration: 0.4s;
+	}
+	.middle li {
+		display: block;
+		position: relative;
+		padding-bottom: 0px;
+	}
+	.middle li:after {
+		content: '';
+		display: block;
+		margin: auto;
+		height: 3px;
+		width: 0px;
+		background: transparent;
+		transition: width .5s ease, background-color .5s ease;
+	}
+	.middle li:hover:after {
+		width: 100%;
+		background: #0099FF;
+	}
+
+
+	.indexback, .signupback, .aboutback {
+		-moz-background-size: cover;
+    	-webkit-background-size: cover;
+	    -o-background-size: cover;
+    	background-size: cover;
+	}	
+	.indexback {
+    	background: url(file:///E:/tutorsbase/images/blues.jpg) no-repeat center center fixed;
+		max-width:100%;
+		height:auto;
+		background-size: 100% 100%;
+    }
+	.aboutback {
+    	background: url(file:///E:/tutorsbase/images/design2.jpg) no-repeat center center fixed;
+		max-width:100%;
+		height:auto;
+		background-size: 100% 100%;
+    }
+	.signupback {
+		background: url(file:///E:/tutorsbase/images/signup.jpg) no-repeat center center fixed;
+		max-width:100%;
+		height:auto;
+		background-size:100% 100%;
+	}
+	.contactback {
+		background: #996633 url(file:///E:/tutorsbase/images/notebook1.jpg) no-repeat center center fixed;
+		max-width:100%;
+		height:auto;
+		background-size:100% 100%;	
+	}
+	
+@media screen and (max-width: 767px) {
+    body { padding-top: 80px; }
+	.remove { display:none; }
+	.navbar-default .navbar-collapse {
+		border-top: 1px solid #ccc;
+		margin-top: 0px;
+	}
+	.navbar-default .navbar-nav li,
+	.navbar-default .navbar-right li {
+		height: 40px;
+		text-align: center;
+	}
+	#jumbo1 h1 {
+		font-size: 50px;
+	}
+	#jumbo1 img {
+		height: 30px;
+		width: 30px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	body { padding-top: 170px; }
+	.navbar-default .navbar-nav li {
+		margin-top: 0px;
+		padding-bottom: 0px;
+	}
+}
+	
+	
+	.clean {
+		background:none;
+	}
+	.halfclean {
+		background: rgba(80, 80, 80, 0.4);
+		color: #fff;
+	}
+
+	.indexback .jumbotron h2 {
+		text-shadow:2px 2px 2px #fff;
+	}
+	.indexback .jumbotron .btn-primary {
+		background-color: #32A2C2;
+		-webkit-box-shadow: 1px 1px 1px 1px rgba(4, 4, 4, 0.3);
+	    -moz-box-shadow:    1px 1px 1px 1px rgba(4, 4, 4, 0.3);
+    	box-shadow:         1px 1px 1px 1px rgba(4, 4, 4, 0.3);
+		border-radius:2px;
+		border:none;
+	}
+	.indexback .jumbotron .btn-primary:hover,
+	.indexback .jumbotron .btn-primary:focus {
+		color:#28829B;
+		background-color:#ffffff;
+		transition-duration: 0.5s;    	
+		border-radius:2px;
+		border:none;
+	}
+	.indexback .jumbotron .btn-default {
+		color: #993333;
+		border-radius:5px;
+		border: 1px solid #993333;
+	}
+	.indexback .jumbotron .btn-default:hover,
+	.indexback .jumbotron .btn-default:focus {
+		color:#fff;
+		box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 12px 30px 0 rgba(0,0,0,0.2);
+		background: none;
+		border-radius:5px;
+		border: 1px solid #fff;
+		transition-duration: 0.4s;		
+	}
+
+	#signtutor fieldset {
+    	border: 2px solid #45AF58;
+	    border-radius: 5px;
+		background: rgba(26, 68, 86, 0.5);
+		padding-left: 5px;
+		padding-right: 5px;
+		margin-top: 5px;
+	}
+	#signtutor legend {
+		width: auto;
+	    color:#ffffff;
+		font-size:16px;
+		background: rgba(26, 68, 86, 0.5);
+    	border:2px solid #45AF58;
+	    border-radius:4px;
+    	padding:2px;
+	    margin-top:0.75em;
+    	margin-left:8px;
+	}
+	#signtutor label {
+		color:#fff;
+	}
+	#tutorsubmit  {
+		border-radius: 25px;
+	}
+	#signtutorside {
+		padding-top: 50px;
+		display: inline-block;
+	}
+	#signtutorside li {
+		color:#fff;
+	}
+
+	.contactbody {
+		padding: 0px;
+	}
+	#jumbo1 {
+		color: #fff;
+		background:none;
+		width: 100%;
+		border-radius: 0px;
+		padding-top: 0px;
+		padding-bottom: 10px;
+	}
+
+	#jumbo2 {
+		color:#fff;
+		background:none;
+		padding-top: 10px;
+	}
+	#jumbo2 button {
+		box-shadow: 0px 4px #749FC0;
+	}
+	#jumbo2 button:active {
+		box-shadow: 0px 2px #69A4D3;
+		transform:translateY(3px);
+	}
+	#jumbo2 form {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	#column1 {
+		background: rgba(26, 68, 86, 0.2);
+		border-radius: 10px;
+	}
+	#column1 a {
+		color: #95B8CC;
+	}
+	#column2 {
+		margin-left: 0px;
+		margin-right:0px;
+	}
+	#column2 input,
+	#column2 select,
+	#column2 textarea {
+		background-color: rgba(0, 0, 0, 0.7);
+		border: 1px solid #fff;
+		color: #fff;
+		font-size: 13px;
+	}
+	#column3 {
+		background: rgba(26, 68, 86, 0.2);
+		margin-left: 0px;
+		border-radius: 10px;
+		padding-left: 25px;
+	}
+	#column3 a,
+	#column3 span {
+		color: #95B8CC;
+	}
+	#column3 img {
+		display: inline-block;
+		height: 30px;
+		width: 30px;
+	}
+	#column3 img:hover {
+		background-color: #fff;
+		transition-duration: 0.5s;
+	}
+
+@moz-keyframes spin {
+  from {
+	-moz-transform: rotateY(0deg);
+  }
+
+  to {
+    -moz-transform: rotateY(360deg);
+  }
+}
+@webkit-keyframes spin {
+  from {
+	-webkit-transform: rotateY(0deg);
+  }
+
+  to {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+@keyframes spin {
+  from {
+	transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+#rotate {
+  animation-duration: 3s;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

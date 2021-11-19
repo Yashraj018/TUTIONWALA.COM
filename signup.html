@@ -1,0 +1,457 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="dist/css/bootstrap.css"/>
+<link rel="stylesheet" href="dist/css/animate.min.css"/>
+<link rel="stylesheet" href="mystyle.css"/>
+<link rel="icon" href="logos/logo.png"/>
+<title>Sign Up | TutorsBase</title>
+</head>
+
+<body class="signupback">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="grad">
+  <div class="container">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="true" aria-controls="navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="logos/tutorsbase1.png" alt="tutorsbase" height="45" width="230" class="img-responsive" /></a>
+    </div>
+    <div class="collapse navbar-collapse" collapse="navCollapsed" id="myNavbar">
+      <ul class="nav navbar-nav middle">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Tutors</a></li>
+        <li><a href="#">Students</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" data-toggle="modal" data-keyboard="true" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+	<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog" tabindex='-1'>
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <img src="logos/logo.png" class="img-responsive" style="height:30px; width:30px;" />
+          <center><h4 style="color:#0099FF;">Login</h4></center>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname">Username</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw">Password</label>
+              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal">Cancel</button>
+          <p>Not a member? <a href="#">Sign Up</a></p>
+          <p><a href="#">Forgot Password?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12">
+ 	<button type="button" class="btn btn-success btn-block" data-toggle="collapse" onclick="$('#signstudent').hide(),$('#signtutor').show()">Sign Up as TUTOR</button>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12">
+ 	<button type="button" class="btn btn-warning btn-block" data-toggle="collapse" onclick="$('#signtutor').hide(),$('#signstudent').show()">Sign Up as STUDENT</button>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<!--Tutor sign up form-->
+<div class="container col-md-8 col-sm-8 col-xs-12 collapse animated fadeInLeft" id="signtutor">
+<form class="form-horizontal" method="post" action="#" accept-charset="UTF-8" id="tutorsignup" role="form">
+<center>
+<strong><label>-- Fill in your details below to join TutorsBase now--</label></strong>
+</center>
+<hr>
+	<fieldset>
+    	<legend>Personal  Details</legend>
+		<div class="row">
+        <div class="col-md-6">
+        <div class="form-group">
+			<label for="tfname" class="col-md-4 control-label">Name:</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" name="tfname" id="tfname" placeholder="First Name" value=""/>
+			</div>
+		</div>
+		</div>
+		<div class="col-md-6">
+        <div class="form-group">
+			<div class="col-md-8">
+				<input type="text" class="form-control" name="tlname" id="tlname" placeholder="Last Name" value=""/>
+			</div>
+		</div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-6">
+        <div class="form-group">
+			<label class="col-md-4 control-label">Gender:</label>
+			<div class="col-md-8 btn-group" data-toggle-name="gender" data-toggle="buttons">
+				<label class="btn btn-success btn-sm"><input type="radio" value="male" id="tmale" name="gender"/>Male</label>
+				<label class="btn btn-success btn-sm"><input type="radio" value="female" id="tfemale" name="gender"/>Female</label>
+				<label class="btn btn-success btn-sm"><input type="radio" value="other" id="tother" name="gender"/>Other</label>
+			</div>
+		</div>
+        </div>
+        </div>
+    </fieldset>
+    <fieldset>
+    	<legend>Contact  Details</legend>
+        <div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="col-md-4 control-label">Address:</label>
+					<div class="col-md-8">
+						<textarea class="form-control" cols="45" rows="3" name="taddress" id="taddress" style="resize: vertical;"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5">
+       			<div class="form-group">
+					<label class="col-md-4 control-label">Pincode:</label>
+					<div class="col-md-8">
+						<input type="text" class="form-control" name="tpincode" id="tpincode" maxlength="6" placeholder="Enter a 6 digit code"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-4 control-label">Area:</label>
+					<div class="col-md-8">
+						<select class="form-control" name="tcity" id="tcity"></select>
+           			</div>
+				</div>
+			</div>
+		</div>
+        <div class="row">
+        <div class="col-md-6">
+		<div class="form-group">
+			<label class="col-md-4 control-label">Mobile:</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" name="tmobile" id="tmobile" placeholder="Mobile" />
+			</div>
+		</div>
+        </div>
+        <div class="col-md-6">
+		<div class="form-group">
+			<div class="col-md-8">
+				<input type="text" class="form-control" name="taltmobile" id="taltmobile" placeholder="Alternate Mobile" />
+			</div>
+		</div>
+        </div>
+        </div>
+    </fieldset>
+    <fieldset>
+    	<legend>Login  Details</legend>
+        <div class="row">
+        <div class="col-md-6">
+        <div class="form-group">
+			<label class="col-lg-4 control-label">Email:</label>
+			<div class="col-lg-8">
+				<input type="text" class="form-control" name="temail" id="temail" autocomplete="off" placeholder="abc@gmail.com"/>
+			</div>
+		</div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-6">
+		<div class="form-group">
+			<label class="col-lg-4 control-label">Password:</label>
+			<div class="col-lg-8">
+				<input type="password" class="form-control" name="tpassword" id="tpassword" placeholder="Password" />
+			</div>
+		</div>
+		</div>
+		<div class="col-md-6">
+        <div class="form-group">
+			<div class="col-lg-8">
+				<input type="password" class="form-control" name="tcpassword" id="tcpassword" placeholder="Retype Password" />
+			</div>
+		</div>
+        </div>
+        </div>
+    </fieldset>
+    <fieldset>
+    	<legend>Tutor  Details</legend>
+        	<div class="row">
+            <div class="col-md-6">
+            <div class="form-group">
+				<label class="col-md-4 control-label">Qualification:</label>
+				<div class="col-md-8">
+					<select class="form-control" name="tqualification" id="tqualification">
+						<option selected disabled>--Select your qualification--</option>
+						<option>10th pass</option>
+						<option>11th pass</option>
+						<option>12th pass</option>
+						<option>Undergraduate</option>
+						<option>Postgraduate</option>
+					</select>
+				</div>
+			</div>
+            </div>
+            <div class="col-md-3">
+            <div class="form-group">
+				<label class="col-md-4 control-label">Class:</label>
+				<div class="col-md-8">
+					<select class="form-control" name="tfrom" id="tfrom">
+						<option selected disabled>--from--</option>
+						<option>Below 1</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+					</select>
+				</div>
+			</div>
+			</div>
+			<div class="col-md-3">
+     		<div class="form-group">
+				<div class="col-md-8">
+					<select class="form-control" name="tto" id="tto">
+						<option selected disabled>--to--</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+					</select>
+				</div>
+			</div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-md-12">
+			<div class="form-group">
+				<label class="col-md-2 control-label">About:</label>
+				<div class="col-md-9">
+					<textarea class="form-control" cols="45" rows="2" name="tabout" id="tabout" placeholder="Say something about yourself..." style="resize: vertical;"></textarea>
+				</div>
+			</div>
+            </div>
+            </div>
+    </fieldset>
+    <br>
+    <center><button type="submit" class="btn btn-primary btn-block" id="tutorsubmit">Submit</button></center>
+    <input type="hidden" name="_token" value="{{Session::token()}}"/>
+</form>
+<hr>
+</div>
+
+<!--Details on the signup page-->
+<div class="container-fluid col-md-4 col-sm-4 col-xs-12" id="signtutorside">
+<center><img src="logos/speak.png" class="img-responsive" height="50" width="60" />
+<br>
+<p>Some text and icons will occupy this area.</p>
+<p>Some text and icons will occupy this area.</p>
+<p>Some text and icons will occupy this area.</p>
+<p>Some text and icons will occupy this area.</p>
+<p>Some text and icons will occupy this area.</p>
+<p>Some text and icons will occupy this area.</p>
+<p>Some text and icons will occupy this area.</p>
+<p>Some text and icons will occupy this area.</p>
+<p>Some text and icons will occupy this area.</p>
+<p>Some text and icons will occupy this area.</p>
+</center>
+</div>
+
+<!--Student sign up form -->
+<div class="container col-md-8 col-sm-8 col-xs-12 collapse animated fadeInRight clean" id="signstudent">
+<form class="form-horizontal" method="post" action="#" accept-charset="UTF-8" id="studentsignup" role="form">
+<center>
+<strong><label>-- Fill in your details below to join TutorsBase now--</label></strong>
+</center>
+<hr>
+	<fieldset>
+    	<legend>Personal  Details</legend>
+		<div class="row">
+        <div class="col-md-6">
+        <div class="form-group">
+			<label for="tfname" class="col-md-4 control-label">Name:</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" name="sfname" id="sfname" placeholder="First Name" value=""/>
+			</div>
+		</div>
+		</div>
+		<div class="col-md-6">
+        <div class="form-group">
+			<div class="col-md-8">
+				<input type="text" class="form-control" name="slname" id="slname" placeholder="Last Name" value=""/>
+			</div>
+		</div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-6">
+        <div class="form-group">
+			<label class="col-md-4 control-label">Gender:</label>
+			<div class="col-md-8 btn-group" data-toggle-name="sgender" data-toggle="buttons">
+				<label class="btn btn-success btn-sm"><input type="radio" value="male" id="smale" name="sgender"/>Male</label>
+				<label class="btn btn-success btn-sm"><input type="radio" value="female" id="sfemale" name="sgender"/>Female</label>
+				<label class="btn btn-success btn-sm"><input type="radio" value="other" id="sother" name="sgender"/>Other</label>
+			</div>
+		</div>
+        </div>
+        </div>
+    </fieldset>
+    <fieldset>
+    	<legend>Contact  Details</legend>
+        <div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="col-md-4 control-label">Address:</label>
+					<div class="col-md-8">
+						<textarea class="form-control" cols="45" rows="3" name="saddress" id="saddress" style="resize: vertical;"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5">
+       			<div class="form-group">
+					<label class="col-md-4 control-label">Pincode:</label>
+					<div class="col-md-8">
+						<input type="text" class="form-control" name="spincode" id="spincode" maxlength="6" placeholder="Enter 6 digit code" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-4 control-label">Area:</label>
+					<div class="col-md-8">
+						<select class="form-control" name="scity" id="scity"></select>
+           			</div>
+				</div>
+			</div>
+		</div>
+        <div class="row">
+        <div class="col-md-6">
+		<div class="form-group">
+			<label class="col-md-4 control-label">Mobile:</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" name="smobile" id="smobile" placeholder="Mobile" />
+			</div>
+		</div>
+        </div>
+        <div class="col-md-6">
+		<div class="form-group">
+			<div class="col-md-8">
+				<input type="text" class="form-control" name="saltmobile" id="saltmobile" placeholder="Alternate Mobile" />
+			</div>
+		</div>
+        </div>
+        </div>
+    </fieldset>
+    <fieldset>
+    	<legend>Login  Details</legend>
+        <div class="row">
+        <div class="col-md-6">
+        <div class="form-group">
+			<label class="col-lg-4 control-label">Email:</label>
+			<div class="col-lg-8">
+				<input type="text" class="form-control" name="semail" id="semail" autocomplete="off" placeholder="abc@gmail.com" />
+			</div>
+		</div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-6">
+		<div class="form-group">
+			<label class="col-lg-4 control-label">Password:</label>
+			<div class="col-lg-8">
+				<input type="password" class="form-control" name="spassword" id="spassword" placeholder="Password" />
+			</div>
+		</div>
+		</div>
+		<div class="col-md-6">
+        <div class="form-group">
+			<div class="col-lg-8">
+				<input type="password" class="form-control" name="scpassword" id="scpassword" placeholder="Retype Password" />
+			</div>
+		</div>
+        </div>
+        </div>
+    </fieldset>
+    <fieldset>
+    	<legend>Extra  Details</legend>
+        	<div class="row">
+            <div class="col-md-6">
+            <div class="form-group">
+				<label class="col-md-4 control-label">Class:</label>
+				<div class="col-md-8">
+					<select class="form-control" name="sclass" id="sclass">
+						<option selected disabled>--I'm in--</option>
+						<option>Std. 1</option>
+						<option>Std. 2</option>
+						<option>Std. 3</option>
+						<option>Std. 4</option>
+						<option>Std. 5</option>
+						<option>Std. 6</option>
+						<option>Std. 7</option>
+						<option>Std. 8</option>
+						<option>Std. 9</option>
+						<option>Std. 10</option>
+						<option>Std. 11</option>
+						<option>Std. 12</option>
+					</select>
+				</div>
+			</div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-md-12">
+			<div class="form-group">
+				<label class="col-md-2 control-label">My Requirements:</label>
+				<div class="col-md-9">
+					<textarea class="form-control" cols="45" rows="2" name="sabout" id="sabout" placeholder="Tell us your requirement about tutor, if any..." style="resize: vertical;"></textarea>
+				</div>
+			</div>
+            </div>
+            </div>
+    </fieldset>
+    <br>
+    <center><button type="submit" class="btn btn-primary btn-block" id="studentsubmit">Submit</button></center>
+    <input type="hidden" name="_token" value="{{Session::token()}}"/>
+</form>
+<hr>
+</div>
+
+	<script src="dist/js/jquery.min.js"></script>
+	<script src="dist/js/bootstrap.min.js"></script>
+</body>
+</html>

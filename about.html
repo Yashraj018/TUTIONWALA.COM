@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="dist/css/bootstrap.css"/>
+<link rel="stylesheet" href="mystyle.css"/>
+<link rel="stylesheet" href="dist/css/animate.min.css" />
+<link rel="icon" href="logos/logo.png"/>
+<title>About Us | TutorsBase</title>
+</head>
+
+<body class="aboutback">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="grad">
+  <div class="container">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-controls="navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="logos/tutorsbase1.png" class="img-responsive" alt="tutorsbase" height="45" width="230" /></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav middle">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="about.html">About</a></li>
+        <li><a href="#">Tutors</a></li>
+        <li><a href="#">Students</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" data-toggle="modal" data-keyboard="true" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="signup.html" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+	<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog" tabindex='-1'>
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <img src="logos/logo.png" class="img-responsive" style="height:30px; width:30px;" />
+          <center><h4 style="color:#0099FF;">Login</h4></center>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname">Username</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw">Password</label>
+              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block"><span>Login</span></button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal">Cancel</button>
+          <p>Not a member? <a href="#">Sign Up</a></p>
+          <p><a href="#">Forgot Password?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-7 col-sm-7 col-xs-12">
+<div class="jumbotron clean">
+<center><h1>About</h1>
+<img src="images/bigline2.png">
+</center>
+<h3>Welcome to TutorsBase.com .<br></h3>
+</div>
+</div>
+
+
+  <script src="dist/js/jquery.min.js"></script>
+  <script src="dist/js/bootstrap.min.js"></script>
+</body>
+</html>
